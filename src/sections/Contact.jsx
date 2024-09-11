@@ -23,8 +23,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        "service_3dr9pgc",
-        "template_4458xh6",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Blendi",
@@ -32,7 +32,7 @@ const Contact = () => {
           to_email: "blendiivanja2@gmail.com",
           message: form.message,
         },
-        "x-KSu0RhAnQbn_h7D"
+        process.env.REACT_APP_EMAILJS_USER_ID
       );
 
       setLoading(false);
