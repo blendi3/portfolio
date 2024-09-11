@@ -23,8 +23,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Blendi",
@@ -32,7 +32,7 @@ const Contact = () => {
           to_email: "blendiivanja2@gmail.com",
           message: form.message,
         },
-        process.env.REACT_APP_EMAILJS_USER_ID
+        import.meta.env.VITE_EMAILJS_USER_ID
       );
 
       setLoading(false);
@@ -45,6 +45,7 @@ const Contact = () => {
       });
     } catch (error) {
       setLoading(false);
+
       console.log(error.text);
 
       toast.error("Error sending message.");
