@@ -59,7 +59,7 @@ const Contact = () => {
           <img
             src="/assets/terminal.png"
             alt="terminal background"
-            className="absolute inset-0 min-h-screen"
+            className="absolute inset-0 min-h-screen hidden sm:block"
           />
 
           <div className="contact-container">
