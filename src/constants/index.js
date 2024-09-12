@@ -181,7 +181,7 @@ export const workExperiences = [
     pos: "Software Developer",
     duration: "Sep 2023 - Apr 2024",
     title:
-      "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
+      "At Pabau Clinic Software, I worked as a Software Developer, focusing on front-end development with React and TypeScript. I contributed to building user-friendly interfaces and improving the user experience for clinic management software.",
     icon: "/assets/pabau.png",
     animation: "victory",
   },
@@ -191,7 +191,7 @@ export const workExperiences = [
     pos: "Front-end Developer",
     duration: "Mar 2023 - Sep 2023",
     title:
-      "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
+      "As a Front-end Developer at OCA Solutions, I implemented responsive web designs using React, enhancing the usability and performance of client applications.",
     icon: "/assets/oca.png",
     animation: "clapping",
   },
@@ -201,7 +201,7 @@ export const workExperiences = [
     pos: "Front-end Developer",
     duration: "Jun 2022 - Mar 2023",
     title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+      "During my freelance work, I built and maintained web applications for various clients, leveraging technologies like HTML, CSS, JavaScript, and React to deliver high-quality solutions.",
     icon: "/assets/upwork.png",
     animation: "salute",
   },

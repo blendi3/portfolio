@@ -15,6 +15,11 @@ const About = () => {
     }, 2000);
   };
 
+  const handleResumeDownload = () => {
+    const resumeUrl = "/my_resume.pdf";
+    window.open(resumeUrl, "_blank");
+  };
+
   return (
     <section className="c-space my-20" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -32,6 +37,12 @@ const About = () => {
                 innovative web solutions, blending creativity with performance
                 to deliver high-quality user experiences.
               </p>
+              <Button
+                onClick={handleResumeDownload}
+                name="My Resume"
+                isBeam
+                containerClass="w-full mt-10"
+              />
             </div>
           </div>
         </div>
