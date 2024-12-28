@@ -25,6 +25,40 @@ export default {
       backgroundImage: {
         terminal: "url('/assets/terminal.png')",
       },
+      animation: {
+        "b-fade": "fadeInB 0.5s ease-out forwards", // Faster and smoother
+        "i-fade": "fadeInI 0.5s ease-out 0.5s forwards", // Faster and smoother
+        "square-top": "squareTop 0.5s ease-out 1s forwards", // Faster
+        "square-right": "squareRight 0.5s ease-out 1.5s forwards", // Faster
+        "square-bottom": "squareBottom 0.5s ease-out 2s forwards",
+        "square-left": "squareLeft 0.5s ease-out 2.5s forwards",
+      },
+      keyframes: {
+        fadeInB: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+        fadeInI: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+        squareTop: {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
+        },
+        squareRight: {
+          "0%": { height: "0%" },
+          "100%": { height: "100%" },
+        },
+        squareBottom: {
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
+        },
+        squareLeft: {
+          "0%": { height: "0%" },
+          "100%": { height: "100%" },
+        },
+      },
     },
   },
   plugins: [],
