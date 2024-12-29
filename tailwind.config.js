@@ -26,12 +26,13 @@ export default {
         terminal: "url('/assets/terminal.png')",
       },
       animation: {
-        "b-fade": "fadeInB 0.5s ease-out forwards", // Faster and smoother
-        "i-fade": "fadeInI 0.5s ease-out 0.5s forwards", // Faster and smoother
-        "square-top": "squareTop 0.5s ease-out 1s forwards", // Faster
-        "square-right": "squareRight 0.5s ease-out 1.5s forwards", // Faster
-        "square-bottom": "squareBottom 0.5s ease-out 2s forwards",
-        "square-left": "squareLeft 0.5s ease-out 2.5s forwards",
+        "square-top": "squareTop 0.5s ease-out 0s forwards",
+        "square-right": "squareRight 0.5s ease-out 0.5s forwards",
+        "square-bottom": "squareBottom 0.5s ease-out 1s forwards",
+        "square-left": "squareLeft 0.5s ease-out 1.5s forwards",
+
+        "b-fade": "fadeInB 0.5s ease-out 2s forwards",
+        "i-fade": "fadeInI 0.5s ease-out 2.5s forwards",
       },
       keyframes: {
         fadeInB: {
